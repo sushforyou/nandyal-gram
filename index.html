@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>NandyalGram</title>
+		<link rel="icon" href="media/images/fav.jpg">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/fontawesome-all.min.css" > 
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css" >
+		<link rel="stylesheet" text="text/css" href="css/style.css" >
+	</head>
+    <body>
+    <!--Nav bar --->
+    	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  			<a class="navbar-brand" href="index.html"> मौजे नंद्याळ</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+ 				 </button>
+ 				 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    					<ul class="navbar-nav mr-auto">
+      						<li class="nav-item">
+								<a class="nav-link" href="index.html"><i class="fas fa-home fa-lg"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="nandyal-plus.html">NANDYAL <i class="fas fa-plus-square"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="photogallary.html">PHOTOGALARY</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="forum.html">FORUM</a>
+							</li>
+						</ul>
+      					<form class="form-inline my-2 my-lg-0">
+      						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    					</form>
+  				</div>
+		</nav>
+		
+	<!--end of  Nav Bar -->
+	<div class="  customDiv  container-fluid">
+
+      
+
+<div class="jumbotron-fluid">
+<h1 class="display-4">Welcome to Nandyal</h1>
+          <p class="lead text-muted">Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+          <p>
+            <a href="index.html" class="btn btn-primary my-2"> Visit PhotoGallary</a>
+            <a href="forum.html" class="btn btn-warning my-2">Lets Discuss, Forum</a>
+          </p>
+        		
+</div>	
+
+<div class=" row">
+			<div class="col-12 col-md-8 col-md-8">
+      			<img src="media/images/h.jpg" alt="image" class=" myimg img-fluid">
+      	
+      
+          
+        </div>
+        
+        <div class="bck col-12 cl-sm-4 col-md-4 col-lg-4">
+        	<form>
+    					<div class="form-group">
+    						 <button class="btn btn-success">LOGIN</button></br>
+    						<label>UserName: </label>
+    						<input type="text"name="name" class="form-control" placeholder="Enter User Name"  required />
+    					</div>
+    					
+    					<div class="form-group">
+    						<label>PassWord: </label>
+    						<input type="password" name="password" class="form-control" placeholder="Enter Password" required />
+    					</div>
+    					
+    						<div class="form-group">
+    							<input  type="submit" class="btn btn-primary" value="submit"/>
+    							<input type="reset" class="btn btn-danger" value="Reset" />
+    							</br>
+    						</div>
+    						
+    						</form>
+    	<h4 class="text-dark">New user</h4><button type="button" class="btn btn-warning btn-md"
+    		           data-toggle="modal" data-target="#flipFlop">Register Here</button>
+			<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+			<h4 class="modal-title" id="modalLabel">Registration Form</h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+					<form action="register.php" method="post">
+    					<div class="form-group">
+    						<label>First Name: </label>
+    						<input type="text"name="fname" class="form-control" placeholder="Enter first Name" required="name"/>
+    					</div>
+    					<div class="form-group">
+    						<label>last Name: </label>
+    						<input type="text"name="lname" class="form-control" placeholder="Enter last Name" required="name"/>
+    					</div>
+    					<div class="form-group">
+    						<label>Email: </label>
+    						<input type="email" name="email" class="form-control" placeholder="Enter Email" required="email"/>
+    					</div>
+    					<div class="form-group">
+    						<label>PassWord: </label>
+    						<input type="password" name="password" class="form-control" placeholder="Enter Password" required="password"/>
+    					</div>
+    					<div class="form-group">
+    						<label>Date Of Birth: </label>
+    						<input type="date"name="dob" class="form-control" placeholder="Enter Date of Birth" required="dob"/>
+    						</div>
+    						<div class="form-group">
+    						<label>Ward: </label>
+    						<input type="number" name="ward" class="form-control" placeholder="Enter ward"required="ward"/>
+    					
+    						<div class="form-group">
+    							<label>Gender: </label>
+    							<select name="gender" class="form-control text" required="gender">
+    							<option value="default">Select</option>
+    								<option value="male">Male</option>
+    								<option value="female"> Female </option>
+    							</select>
+    						</div>
+    						<div class="form-group">
+    							<input  type="submit" class="btn-primary" value="submit"/>
+    							<input type="reset" class="btn-danger" value="Reset" />
+    						</div>
+    					</div>
+    				</form>
+		</div>
+		<div class="modal-footer">
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+    					</div>
+    			
+        </div>
+   
+      
+      	</div><!--nav bar ends-->
+      	<section>
+					
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="panel panel-default text-center">
+									<div class="panel-body">
+										<span class="glyphicon glyphicon-ok"></span>
+										<h1>This is heading</h1>
+										<p>
+											Curabitur at ex aliquet sapien pellentesque auctor. Nam vitae mauris quis mauris interdum placerat vel a erat. Integer vel nibh ultrices nibh suscipit consectetur nec quis elit. Sed eget massa odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam quis gravida metus. Aliquam blandit tortor quis nisl convallis fringilla. Fusce sagittis sem et condimentum vulputate. Proin lobortis, mi ac molestie ultricies, risus purus fermentum orci, in congue lacus enim dapibus dui. Maecenas velit arcu, sodales sed orci vel, fermentum vulputate risus
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="panel panel-default  text-center">
+									<div class="panel-body">
+									<span class="glyphicon glyphicon-play-circle"></span>
+										<h1>This is heading</h1>
+										<p>
+											Curabitur at ex aliquet sapien pellentesque auctor. Nam vitae mauris quis mauris interdum placerat vel a erat. Integer vel nibh ultrices nibh suscipit consectetur nec quis elit. Sed eget massa odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam quis gravida metus. Aliquam blandit tortor quis nisl convallis fringilla. Fusce sagittis sem et condimentum vulputate. Proin lobortis, mi ac molestie ultricies, risus purus fermentum orci, in congue lacus enim dapibus dui. Maecenas velit arcu, sodales sed orci vel, fermentum vulputate risus
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="panel panel-default  text-center">
+									<div class="panel-body">
+									<span class="glyphicon glyphicon-star"></span>
+										<h1>This is heading</h1>
+										<p>
+											Curabitur at ex aliquet sapien pellentesque auctor. Nam vitae mauris quis mauris interdum placerat vel a erat. Integer vel nibh ultrices nibh suscipit consectetur nec quis elit. Sed eget massa odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam quis gravida metus. Aliquam blandit tortor quis nisl convallis fringilla. Fusce sagittis sem et condimentum vulputate. Proin lobortis, mi ac molestie ultricies, risus purus fermentum orci, in congue lacus enim dapibus dui. Maecenas velit arcu, sodales sed orci vel, fermentum vulputate risus
+										</p>
+									</div>
+								</div>
+							</div>
+						</div><!--End row--->
+				</section>
+ <footer>
+      <div class="container-fluid">
+      <div class="row">
+      <div class="ftr col-12 col-md-12 col-lg-12">
+        <p class="float-right">
+          <button class="btn btn-warning"><a href="#">Back to top</a></button>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+        <p>@Copyrights 2018</p>
+        <i class="fab fa-google-plus-square fa-3x"></i>
+        <i class="fab fa-facebook fa-3x"></i>
+        <i class="fab fa-twitter-square fa-3x"></i>
+        
+      </div>
+      </div>
+      </div>
+    </footer>
+
+
+		<script src="libs/jquery/jquery-3.2.1.slim.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js" ></script>
+		
+	</body>
+</html>
+ 
+											
+ 
+ 
+								
+							
+								
